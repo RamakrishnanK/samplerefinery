@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/refinery/refinerycms.git
-  revision: 3e2c8ec2924ae0a1cd9b3f2481047f1e7e67e0fd
+  revision: 46a3f3bf85f7d9e0614f27cc786d5a9a8d0da2b3
   branch: 2-0-stable
   specs:
     refinerycms (2.0.10)
@@ -79,7 +79,7 @@ GEM
     arel (3.0.2)
     awesome_nested_set (2.1.6)
       activerecord (>= 3.0.0)
-    babosa (0.3.10)
+    babosa (0.3.11)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
     coffee-rails (3.2.2)
