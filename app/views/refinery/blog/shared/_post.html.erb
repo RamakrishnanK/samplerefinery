@@ -23,9 +23,11 @@
     </header>
     <section class='clearfix'>
       <% if blog_post_teaser_enabled? %>
-        <%= blog_post_teaser(post) %>
+       <!--  <%= blog_post_teaser(post) %> -->
+        <%= truncate(post.body, :length => 500).html_safe %>
+         
       <% else %>
-        <%= post.body.html_safe %>
+        <%= truncate(post.body.html_safe, :length => 200) %>
       <% end %>
     </section>
     <footer>
