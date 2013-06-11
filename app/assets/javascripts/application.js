@@ -13,3 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+<script type="text/javascript">
+$("#nav a[href="+window.location.pathname+"]")
+    .addClass('current-page-item');
+</script>

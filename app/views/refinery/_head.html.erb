@@ -7,12 +7,12 @@
   <%= raw %(<link rel="canonical" content="#{@canonical}" />) if @canonical.present? -%>
   <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
   <%= yield :meta %>
-
+<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
   <%= stylesheet_link_tag "application", "formatting", "theme" %>
   <%= stylesheet_link_tag "home" if home_page? %>
   <%= yield :stylesheets %>
 
   <%= render '/refinery/google_analytics' %>
 
-  <%= javascript_include_tag 'modernizr-min' %>
+  <%= javascript_include_tag :defaults %>
 </head>
