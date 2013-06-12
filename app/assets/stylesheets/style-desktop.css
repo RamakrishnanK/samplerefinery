@@ -97,7 +97,7 @@
 			right: 40px;
 			top: 1px;
 			line-height: 84px;
-			text-transform: lowercase;
+			text-transform: none;
 			font-size: 1.3em;
 			letter-spacing: -1px;
 		}
@@ -183,7 +183,7 @@
 
 	#main {
 		background: #fff;
-		padding: 2% 0 2% 0;
+		padding: 0 0 0 0;
 	}
 
 		#main .controls {
