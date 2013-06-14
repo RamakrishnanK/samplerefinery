@@ -19,6 +19,12 @@ font-size: 100%;
 font: inherit;
 vertical-align: top;
 }
+.field{
+	padding: 20px;
+}
+.actions{
+	padding: 20px;
+}
  body {
 font-size: 13.5pt;
 font-family: sans-serif;
