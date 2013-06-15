@@ -1,6 +1,34 @@
-<div id="main">
+<div id="my-contact-div"><!-- contactable html placeholder --></div>
+<div id="">
 	<div class="container">
-		<div class="row main-row">
+             <div style="margin-left:0px;">
+              
+                <SCRIPT LANGUAGE="JavaScript">
+<!--
+//Bread crumb script - Kevin Lynn Brown
+//Duplicate directory names bug fix by JavaScriptKit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+var path = "";
+var href = document.location.href;
+var s = href.split("/");
+for (var i=3;i<(s.length-1);i++) {
+path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"\">"+s[i]+"</A> >> ";
+
+}
+i=s.length-1;
+
+path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+
+var url = "<a href=<%= root_url %> >Home</a>"+" >> "+path;
+
+document.writeln(url);
+//-->
+
+</script>
+</div>
+		<div class="row main-row" style="padding-left:0px;">
+
 		<% @page.title = '' %>
 <%= render_content_page(@page, { 
       :hide_sections => local_assigns[:hide_sections],
@@ -10,3 +38,18 @@
 </div>
 	</div>
 		</div>
+		<script>
+$(document).ready(function() {
+	$("#content div").hide(); // Initially hide all content
+	$("#tabs li:first").attr("id","current"); // Activate first tab
+	$("#content div:first").fadeIn(); // Show first tab content
+    
+    $('#tabs a').click(function(e) {
+        e.preventDefault();        
+        $("#content div").hide(); //Hide all content
+        $("#tabs li").attr("id",""); //Reset id's
+        $(this).parent().attr("id","current"); // Activate this
+        $('#' + $(this).attr('title')).fadeIn(); // Show content for current tab
+    });
+})();
+</script>
