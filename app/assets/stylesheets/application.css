@@ -57,12 +57,13 @@ width: 33.333333%;
 float: left;
 }
 section, article {
-padding: 0px 0px 0px 0px;
+padding: 0px 15px 0px 0px;
 }
 .container {
 width: 100%;
 margin: 0 auto;
 }
+
 .da-slider{
 	width: 100%;
 	min-width: 520px;
@@ -70,7 +71,8 @@ margin: 0 auto;
 	position: relative;
 	margin: 15px auto;
 	overflow: hidden;
-	background: transparent url(images/bg1.png) repeat 0% 0%;
+	background-color: #c6ccbc;
+	/*background: transparent url(images/bg1.png) repeat 0% 0%;*/
 /*	border-top: 8px solid #efc34a;*/
 /*	border-bottom: 8px solid #efc34a;*/
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff;
@@ -901,7 +903,8 @@ margin: 0 auto;
 	
 		/* you can make a different style for default selected value */
 		#nav1 a.selected {
-			color:#f00;
+			background-color: #EFC34A;
+    color:#fff;
 		}
 	
 		/* submenu, it's hidden by default */

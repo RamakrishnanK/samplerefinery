@@ -12,9 +12,7 @@
 var path = "";
 var href = document.location.href;
 var s = href.split("/");
-for (var i=2;i<(s.length-1);i++) {
-    
-
+for (var i=3;i<(s.length-1);i++) {
 path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"\">"+s[i]+"</A> >> ";
 
 }
@@ -22,10 +20,7 @@ i=s.length-1;
 
 path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
 
-// s[2]="Home"
-alert(s[2]);
-
-var url = path;
+var url = "<a href=<%= root_url %> >Home</a>"+" >> "+path;
 
 document.writeln(url);
 //-->
