@@ -1,6 +1,10 @@
-<SCRIPT LANGUAGE="JavaScript">
+<div id="my-contact-div"><!-- contactable html placeholder --></div>
+<div id="">
+    <div class="container">
+             <div style="margin-left:0px;">
+              
+                <SCRIPT LANGUAGE="JavaScript">
 <!--
-
 //Bread crumb script - Kevin Lynn Brown
 //Duplicate directory names bug fix by JavaScriptKit.com
 //Visit JavaScript Kit (http://javascriptkit.com) for script
@@ -9,31 +13,48 @@ var path = "";
 var href = document.location.href;
 var s = href.split("/");
 for (var i=2;i<(s.length-1);i++) {
-path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+    
+
+path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"\">"+s[i]+"</A> >> ";
+
 }
 i=s.length-1;
+
 path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
-var url = window.location.protocol + "//" + path;
+
+// s[2]="Home"
+alert(s[2]);
+
+var url = path;
 
 document.writeln(url);
 //-->
-</script>
 
-<p align="left">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
 </script>
+</div>
+        <div class="row main-row" style="padding-left:0px;">
 
-<div id="my-contact-div"><!-- contactable html placeholder --></div>
-<div id="main">
-	<div class="container">
-		<div class="row main-row">
-		<% @page.title = '' %>
+        <% @page.title = '' %>
 <%= render_content_page(@page, { 
       :hide_sections => local_assigns[:hide_sections],
       :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
     }) %>
 <%= render '/refinery/draft_page_message' unless @page.nil? or @page.live? -%>
-
 </div>
-	</div>
-		</div>
-		<script>
+    </div>
+        </div>
+        <script>
+$(document).ready(function() {
+    $("#content div").hide(); // Initially hide all content
+    $("#tabs li:first").attr("id","current"); // Activate first tab
+    $("#content div:first").fadeIn(); // Show first tab content
+    
+    $('#tabs a').click(function(e) {
+        e.preventDefault();        
+        $("#content div").hide(); //Hide all content
+        $("#tabs li").attr("id",""); //Reset id's
+        $(this).parent().attr("id","current"); // Activate this
+        $('#' + $(this).attr('title')).fadeIn(); // Show content for current tab
+    });
+})();
+</script>

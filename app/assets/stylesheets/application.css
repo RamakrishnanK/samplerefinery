@@ -26,16 +26,18 @@ vertical-align: top;
 	padding: 20px;
 }
  body {
-font-size: 13.5pt;
+
 font-family: sans-serif;
-background-color: #F0FCFF;
-font-family: 'Ubuntu Condensed', sans-serif;
-color: black;
+background-color: #fff;
+/*font-family: 'Ubuntu Condensed', sans-serif;*/
+    font: 12px helvetica,arial,sans-serif;
+    color: rgb(117, 117, 117);
 letter-spacing: -1px;
 }
 #main {
 width: 80%;
 margin: 0px auto;
+/*box-shadow: 3px 3px 10px 5px #333;*/
 }
 
 #header {
@@ -45,7 +47,8 @@ display: block;
 position: relative;
 margin: 0 0 0 0;
 padding: 0 40px 0 150px;
-background-color:#2D3538;
+/*background: #2D3538;*/
+background-color: #3D5E68;
 
 height: 86px;
 }
@@ -68,8 +71,8 @@ margin: 0 auto;
 	margin: 15px auto;
 	overflow: hidden;
 	background: transparent url(images/bg1.png) repeat 0% 0%;
-	border-top: 8px solid #efc34a;
-	border-bottom: 8px solid #efc34a;
+/*	border-top: 8px solid #efc34a;*/
+/*	border-bottom: 8px solid #efc34a;*/
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff;
 	-webkit-transition: background-position 1.4s ease-in-out 0.3s;
 	-moz-transition: background-position 1.4s ease-in-out 0.3s;
@@ -78,12 +81,12 @@ margin: 0 auto;
 	transition: background-position 1.4s ease-in-out 0.3s;
 }
 .da-slide{
-	position: absolute;
+
 	width: 100%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font: 12px helvetica,arial,sans-serif;
 	text-align: left;
 }
 .da-slide-current{
@@ -119,9 +122,9 @@ margin: 0 auto;
 	width: 50%;
 	top: 60px;
 	white-space: nowrap;
-	z-index: 10;
+	z-index: 0;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-	font-family: 'Economica', Arial, sans-serif;
+		font-family:helvetica,arial,sans-serif;
 	font-weight: 700;
 }
 .da-slide p{
@@ -133,7 +136,7 @@ margin: 0 auto;
 	height: 80px;
 	overflow: hidden;
 	font-style: italic;
-	font-family: 'Economica', Arial, sans-serif;
+	font-family:helvetica,arial,sans-serif;
 	font-weight: 400;
 	font-style: italic;
 }
@@ -151,7 +154,7 @@ margin: 0 auto;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 	color: #007897;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-	border: 8px solid #EFC34A;
+	border: 8px solid #3D5E68;
 	padding: 2px 20px 0px;
 	font-size: 18px;
 	line-height: 30px;
@@ -178,7 +181,7 @@ margin: 0 auto;
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
-	background: #e4b42d;
+	background: #3D5E68;
 	margin: 3px;
 	cursor: pointer;
 	box-shadow: 
@@ -193,14 +196,15 @@ margin: 0 auto;
 	top: 2px;
 	left: 2px;
 	border-radius: 50%;
-	background: rgb(255,255,255);
+	background-color: #FFF;
+/*	background: rgb(255,255,255);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1)));
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
 	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
 	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
 	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );*/
 }
 .da-arrows{
 	-moz-user-select: none;
@@ -777,12 +781,12 @@ margin: 0 auto;
     -moz-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
     -webkit-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
     box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
-    background: #ad1c1c;
-    background:    -moz-linear-gradient(220deg, transparent 10px, #ad1c1c 10px);
-    background:    -webkit-linear-gradient(220deg, transparent 10px, #ad1c1c 10px);     
-    background:     -ms-linear-gradient(220deg, transparent 10px, #ad1c1c 10px); 
-    background:      -o-linear-gradient(220deg, transparent 10px, #ad1c1c 10px); 
-    background:         linear-gradient(220deg, transparent 10px, #ad1c1c 10px);
+    background: #3D5E68;
+    background:    -moz-linear-gradient(220deg, transparent 10px, #3D5E68 10px);
+    background:    -webkit-linear-gradient(220deg, transparent 10px, #3D5E68 10px);     
+    background:     -ms-linear-gradient(220deg, transparent 10px, #3D5E68 10px); 
+    background:      -o-linear-gradient(220deg, transparent 10px, #3D5E68 10px); 
+    background:         linear-gradient(220deg, transparent 10px, #3D5E68 10px);
     text-shadow: 0 1px 0 rgba(0,0,0,.5);
     color: #fff;
     float: left;
@@ -794,12 +798,12 @@ margin: 0 auto;
 
 #tabs a:hover
 {
-    background: #c93434;
-    background:    -moz-linear-gradient(220deg, transparent 10px, #c93434 10px);
-    background:    -webkit-linear-gradient(220deg, transparent 10px, #c93434 10px);     
-    background:     -ms-linear-gradient(220deg, transparent 10px, #c93434 10px); 
-    background:      -o-linear-gradient(220deg, transparent 10px, #c93434 10px); 
-    background:         linear-gradient(220deg, transparent 10px, #c93434 10px);     
+    background: #EFC34A;
+    background:    -moz-linear-gradient(220deg, transparent 10px, #EFC34A 10px);
+    background:    -webkit-linear-gradient(220deg, transparent 10px, #EFC34A 10px);     
+    background:     -ms-linear-gradient(220deg, transparent 10px, #EFC34A 10px); 
+    background:      -o-linear-gradient(220deg, transparent 10px, #EFC34A 10px); 
+    background:         linear-gradient(220deg, transparent 10px, #EFC34A 10px);     
 }
 
 #tabs a:focus
@@ -834,13 +838,17 @@ margin: 0 auto;
     -moz-box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
     -webkit-box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
     box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
-    padding: 60px;
+    padding: 15px;
 }
-
+.inner
+{
+	width:85%;
+	text-align: justify;
+}
 /* Remove the rule below if you want the content to be "organic" */
 #content div
 {
-    height: 220px;
+    height: auto;
 }
 
 /* --- */
@@ -853,3 +861,101 @@ margin: 0 auto;
 {
     color: #eee;
 }
+
+	#nav1 {
+		margin:0; 
+		padding:0; 
+		list-style:none;
+	}	
+	
+		/* make the LI display inline */
+		/* it's position relative so that position absolute */
+		/* can be used in submenu */
+		#nav1 li {
+			float:left; 
+			display:block; 
+			width:auto; 
+			/*background:#ccc;*/ 
+			position:relative;
+			z-index:500; 
+			margin:0 1px;
+		}
+		#nav1 li:hover{background-color: #EFC34A;}
+		/* this is the parent menu */
+		#nav1 li a {
+			display:block; 
+			padding:0px 5px 0 5px; 
+			font-weight:700;  
+			height:auto; 
+			text-decoration:none; 
+			color:#fff; 
+			line-height:84px;
+			text-align:center; 
+			color:#333;
+		}
+
+		#nav1 li a:hover {
+			color:#fff;
+
+		}
+	
+		/* you can make a different style for default selected value */
+		#nav1 a.selected {
+			color:#f00;
+		}
+	
+		/* submenu, it's hidden by default */
+		#nav1 ul {
+	position: absolute;
+left: 0;
+display: none;
+margin: 0 0 0 0px;
+padding: 0;
+list-style: none;
+background: #3D5E68;
+font-size: 14px;
+text-align: left;
+font-weight: normal;
+width: 185px;
+border-radius: 5px;
+
+		}
+		
+		#nav1 ul li {
+			width: 100%;
+float: left;
+padding: 5px 0px;
+border-top: 1px solid white;
+border-radius: 5px;
+		}
+			#nav1 ul li a{
+			
+			padding:0px 5px 0 5px; 
+			font-weight:700;  
+			height:auto; 
+			line-height: 20px;
+			text-decoration:none; 
+			color:#fff; 
+			text-align:center; 
+			
+		}
+		#nav1 ul li:hover{background-color: #EFC34A;}
+		
+		/* display block will make the link fill the whole area of LI */
+		#nav1 ul a {
+			display:block;  
+			height:15px;
+			padding: 8px 5px; 
+			color:#666;
+		}
+		
+		#nav1 ul a:hover {
+			text-decoration:underline;	
+		}
+
+		/* fix ie6 small issue */
+		/* we should always avoid using hack like this */
+		/* should put it into separate file : ) */
+		*html #nav1 ul {
+			margin:0 0 0 -2px;
+		}
