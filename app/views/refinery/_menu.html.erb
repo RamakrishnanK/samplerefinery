@@ -20,7 +20,21 @@
 </nav>
 
 <% end -%>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#nav1 li a').each(function(index) {
+        if(this.href.trim() == window.location)
+            $(this).addClass("selected");
+    });
+});
+</script>
 
+<style>
+.selected {
+    background-color: #EFC34A;
+    color:#fff;
+}
+</style>
   <script type="text/javascript">
 $(document).ready(function () { 
   
