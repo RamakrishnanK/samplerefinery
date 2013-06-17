@@ -1,6 +1,6 @@
 <div id="my-contact-div"><!-- contactable html placeholder --></div>
 <div id="">
-	<div class="container">
+  <div class="container">
              <div style="margin-left:0px;">
               
                 <SCRIPT LANGUAGE="JavaScript">
@@ -27,22 +27,22 @@ document.writeln(url);
 
 </script>
 </div>
-		<div class="row main-row" style="padding-left:0px;">
+    <div class="row main-row" style="padding-left:0px;">
 
-		<% @page.title = '' %>
+    <% @page.title = '' %>
 <%= render_content_page(@page, { 
       :hide_sections => local_assigns[:hide_sections],
       :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
     }) %>
 <%= render '/refinery/draft_page_message' unless @page.nil? or @page.live? -%>
 </div>
-	</div>
-		</div>
-		<script>
+  </div>
+    </div>
+    <script>
 $(document).ready(function() {
-	$("#content div").hide(); // Initially hide all content
-	$("#tabs li:first").attr("id","current"); // Activate first tab
-	$("#content div:first").fadeIn(); // Show first tab content
+  $("#content div").hide(); // Initially hide all content
+  $("#tabs li:first").attr("id","current"); // Activate first tab
+  $("#content div:first").fadeIn(); // Show first tab content
     
     $('#tabs a').click(function(e) {
         e.preventDefault();        
