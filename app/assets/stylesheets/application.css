@@ -960,6 +960,4 @@ border-radius: 5px;
 		/* fix ie6 small issue */
 		/* we should always avoid using hack like this */
 		/* should put it into separate file : ) */
-		*html #nav1 ul {
-			margin:0 0 0 -2px;
-		}
+		
