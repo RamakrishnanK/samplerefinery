@@ -1,9 +1,8 @@
-<div id="my-contact-div"><!-- contactable html placeholder --></div>
 <div id="">
-    <div class="container">
+  <div class="container">
              <div style="margin-left:0px;">
-              
-                <SCRIPT LANGUAGE="JavaScript">
+<% if !current_page?('/') %>
+               <SCRIPT LANGUAGE="JavaScript">
 <!--
 //Bread crumb script - Kevin Lynn Brown
 //Duplicate directory names bug fix by JavaScriptKit.com
@@ -12,40 +11,38 @@
 var path = "";
 var href = document.location.href;
 var s = href.split("/");
-path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[2])+s[2].length+1)+"\">"+ "Home"+"</A> >> ";
+path+="<A HREF=\""+href.substring(0,href.indexOf(s[2])+s[2].length)+"\">"+"Home"+"</A> >> ";
 for (var i=3;i<(s.length-1);i++) {
-    
-path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"\">"+ s[i]+"</A> >> ";
-
+path+="  <A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"\">"+s[i]+"</A> >> ";
 
 }
 i=s.length-1;
 
-path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+path+="  <A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
 
 var url = path;
 
 document.writeln(url);
 //-->
 
-</script>
+</script><%end%>
 </div>
-        <div class="row main-row" style="padding-left:0px;">
+    <div class="row main-row" style="padding-left:0px;">
 
-        <% @page.title = '' %>
+    <% @page.title = '' %>
 <%= render_content_page(@page, { 
       :hide_sections => local_assigns[:hide_sections],
       :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
     }) %>
 <%= render '/refinery/draft_page_message' unless @page.nil? or @page.live? -%>
 </div>
+  </div>
     </div>
-        </div>
-        <script>
+    <script> 
 $(document).ready(function() {
-    $("#content div").hide(); // Initially hide all content
-    $("#tabs li:first").attr("id","current"); // Activate first tab
-    $("#content div:first").fadeIn(); // Show first tab content
+  $("#content div").hide(); // Initially hide all content
+  $("#tabs li:first").attr("id","current"); // Activate first tab
+  $("#content div:first").fadeIn(); // Show first tab content
     
     $('#tabs a').click(function(e) {
         e.preventDefault();        
