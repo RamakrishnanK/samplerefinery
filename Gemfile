@@ -52,5 +52,5 @@ gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-videojs'
 gem 'refinerycms-photo-gallery', '~> 0.1.0'
-gem "breadcrumbs_on_rails"
+# gem "breadcrumbs_on_rails"
 gem  'taps'
