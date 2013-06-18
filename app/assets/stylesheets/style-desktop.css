@@ -15,12 +15,9 @@
 	}
 
 	section, article {
-<<<<<<< HEAD
+
 		margin: 0 0 20px 0;
 		
-=======
-		margin: 0 0px 20px 0;
->>>>>>> c7f91c3d6c66d95780f27e3e1857d3d200aad06b
 	}
 
 	section:last-child, article:last-child {
