@@ -48,8 +48,8 @@ position: relative;
 margin: 0 0 0 0;
 padding: 0 40px 0 150px;
 /*background: #2D3538;*/
-background-color: #3D5E68;
-
+/*background-color: #3D5E68;*/
+background-color: rgb(27, 68, 80);
 height: 86px;
 }
 .\34 u {
@@ -71,7 +71,7 @@ margin: 0 auto;
 	position: relative;
 	margin: 15px auto;
 	overflow: hidden;
-	background-color: #c6ccbc;
+	background-color: rgb(211, 214, 206);
 	/*background: transparent url(images/bg1.png) repeat 0% 0%;*/
 /*	border-top: 8px solid #efc34a;*/
 /*	border-bottom: 8px solid #efc34a;*/
