@@ -28,7 +28,7 @@
 	}
 
 	h1,h2 {
-		text-transform: lowercase;
+		/*text-transform: lowercase;*/
 	}
 
 	h2 {
@@ -38,7 +38,7 @@
 	}
 
 	h3,h4 {
-		color: #283121;
+		color: #3D5E68;
 		margin-bottom: 0.5em;
 	}
 
